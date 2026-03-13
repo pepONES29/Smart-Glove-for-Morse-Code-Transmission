@@ -3,7 +3,7 @@ An assistive wearable (AAC) that translates finger flexion depth into Morse code
 Unlike traditional Morse code systems that rely on precise pulse timing, this "Smart Glove" uses amplitude-based classification, allowing users to send "dots" and "dashes" simply by controlling the depth of a finger bend.
 
 
-🧞‍♂️ Key Innovations
+🧞‍♂️ **Key Innovations**
 
 - **Depth-Based Input:** Accessible for individuals with motor impairments; a "light bend" triggers a dot, while a "deep bend" triggers a dash.
 
@@ -12,7 +12,7 @@ Unlike traditional Morse code systems that rely on precise pulse timing, this "S
 - **GATT Architecture:** The ESP32 acts as a GATT Server hosting the Nordic UART Service (NUS), pushing data asynchronously to a smartphone.
 
 
-🛠️ Hardware Requirements
+🛠️ **Hardware Requirements**
 
 The system is built on a portable, autonomous architecture providing roughly 60+ hours of continuous operation.
 
@@ -21,13 +21,13 @@ The system is built on a portable, autonomous architecture providing roughly 60+
 - Local Feedback: **SSD1306 OLED Display** - *128x64 resolution, I2C protocol*
 - Power Supply: **Hama Powerbank** - *10000 mAh capacity*
 
-Signal Conditioning: 
+**Signal Conditioning:**
 The flex sensor acts as a variable resistor in a voltage divider circuit. The output voltage Vout read by the ESP32's ADC is calculated as:
 
 $$V_{out} = V_{in} \times \frac{R_{static}}{R_{static} + R_{flex}}$$
 
 
-💻 Software Logic
+💻 **Software Logic**
 
 The firmware is designed as a Finite State Machine (FSM) using non-blocking timing (millis()) to ensure the BLE connection remains stable.
 
@@ -48,7 +48,7 @@ The firmware is designed as a Finite State Machine (FSM) using non-blocking timi
   - 3.5s: Triggers word transmission via BLE.
 
 
-🔬 Results and Experiments
+🔬 **Results and Experiments**
 
 Empirical testing mapped raw ADC values to physical states with a 95% success rate.
 
