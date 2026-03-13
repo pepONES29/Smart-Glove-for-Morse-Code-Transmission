@@ -5,11 +5,11 @@ Unlike traditional Morse code systems that rely on precise pulse timing, this "S
 
 🧞‍♂️ Key Innovations
 
-- Depth-Based Input: Accessible for individuals with motor impairments; a "light bend" triggers a dot, while a "deep bend" triggers a dash.
+- **Depth-Based Input:** Accessible for individuals with motor impairments; a "light bend" triggers a dot, while a "deep bend" triggers a dash.
 
-- Word Buffering: Decoded characters are stored locally and transmitted to the mobile device only after a word is completed (3.5s inactivity), improving readability.
+- **Word Buffering:** Decoded characters are stored locally and transmitted to the mobile device only after a word is completed (3.5s inactivity), improving readability.
 
-- GATT Architecture: The ESP32 acts as a GATT Server hosting the Nordic UART Service (NUS), pushing data asynchronously to a smartphone.
+- **GATT Architecture:** The ESP32 acts as a GATT Server hosting the Nordic UART Service (NUS), pushing data asynchronously to a smartphone.
 
 
 🛠️ Hardware Requirements
