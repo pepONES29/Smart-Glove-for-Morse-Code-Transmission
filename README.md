@@ -37,15 +37,15 @@ The firmware is designed as a Finite State Machine (FSM) using non-blocking timi
 
 - Classification: 
 
--- Dot (.): ADC value between 650 and 950.
+  - Dot (.): ADC value between 650 and 950.
 
--- Dash (-): ADC value below 650.
+  - Dash (-): ADC value below 650.
 
 - Timeouts: 
 
--- 1.5s: Triggers character translation.
+  - 1.5s: Triggers character translation.
 
--- 3.5s: Triggers word transmission via BLE.
+  - 3.5s: Triggers word transmission via BLE.
 
 
 🔬 Results and Experiments
